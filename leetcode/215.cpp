@@ -7,7 +7,7 @@
 #include <vector>
 using namespace std;
 
-class Solution {
+class Solution215 {
 public:
     int quickSelect(vector<int>& a, int l, int r, int index) {
         int q = randomPartition(a, l, r);
@@ -42,7 +42,7 @@ public:
 };
 
 void  run215(){
-    Solution solution;
+    Solution215 solution;
     int x[6]={3,2,1,5,6,4};
     vector<int>obj(x,x+6);
     solution.findKthLargest(obj,2);

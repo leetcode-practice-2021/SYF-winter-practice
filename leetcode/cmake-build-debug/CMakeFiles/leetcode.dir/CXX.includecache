@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/shiyufei/mianshi/leetcode/main.cpp
+iostream
+-
+stdio.h
+-
+string
+/Users/shiyufei/mianshi/leetcode/string
+
