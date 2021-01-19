@@ -6,6 +6,20 @@
 
 #IncludeRegexTransform: 
 
+/Users/shiyufei/mianshi/leetcode/15.cpp
+vector
+/Users/shiyufei/mianshi/leetcode/vector
+iostream
+/Users/shiyufei/mianshi/leetcode/iostream
+
+/Users/shiyufei/mianshi/leetcode/3.cpp
+string
+-
+iostream
+-
+stdio.h
+-
+
 /Users/shiyufei/mianshi/leetcode/main.cpp
 iostream
 -

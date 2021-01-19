@@ -43,7 +43,7 @@ public:
 
 void  run215(){
     Solution215 solution;
-    int x[6]={3,2,1,5,6,4};
+    int x[6]={-1,0,1,2,-1,-4};
     vector<int>obj(x,x+6);
     solution.findKthLargest(obj,2);
 }

@@ -18,20 +18,23 @@ public:
         temp[0]=s[0];
 
         int max=1;
-        int  index=0;
-        for (int i = 0; i < len; ++i) {
-            if (*p=='\0')
-                break;
-            for (char* ch = &s[0]; ch < p; ++ch) {
-                if(p==ch)
+        int  index=1;
+        for (int i = 0; i < len; ++i,p++) {
+
+            for (int j = i; j < len; ++j) {
+                if (*p=='\0')
                     break;
-                else{
-                    temp[++index]=*p;
+                for (char* ch = &s[0]; ch < p; ++ch) {
+                    if(p[0]==ch[0])
+                        break;
+                    else{
+                        temp[index++]=ch[0];
+                    }
                 }
+                if (max<index)
+                    max=index;
+                index=1;
             }
-            if (max<index)
-                max=index;
-            index=0;
         }
         return max;
     }
