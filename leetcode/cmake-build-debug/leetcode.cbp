@@ -80,6 +80,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/shiyufei/mianshi/leetcode/103.cpp">
+			<Option target="leetcode"/>
+		</Unit>
+		<Unit filename="/Users/shiyufei/mianshi/leetcode/121.cpp">
+			<Option target="leetcode"/>
+		</Unit>
 		<Unit filename="/Users/shiyufei/mianshi/leetcode/146.cpp">
 			<Option target="leetcode"/>
 		</Unit>
@@ -90,6 +96,9 @@
 			<Option target="leetcode"/>
 		</Unit>
 		<Unit filename="/Users/shiyufei/mianshi/leetcode/3.cpp">
+			<Option target="leetcode"/>
+		</Unit>
+		<Unit filename="/Users/shiyufei/mianshi/leetcode/474.cpp">
 			<Option target="leetcode"/>
 		</Unit>
 		<Unit filename="/Users/shiyufei/mianshi/leetcode/main.cpp">
