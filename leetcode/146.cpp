@@ -65,7 +65,7 @@ public:
                 cells.insert(it,{key,value});
             }
         } else if (size <= length) {
-            cells.insert(key, value);
+            cells.insert(cells.end(),{key,value});
             size++;
         }
     }

@@ -18,9 +18,34 @@ using namespace std;
 class Solution {
 public:
     int findMaxForm(vector<string>& strs, int m, int n) {
-        int max;
-        for(string str:strs){
-            if ()
+        int maxnum;
+        int numZero=0,numOne=0;
+        int left1=m,left2=n;
+        for (int i = 0; i < strs.size(); ++i){
+            int temp=0;
+            numZero=count(strs[i].begin(),strs[i].end(),'0');
+            numOne=count(strs[i].begin(),strs[i].end(),'1');
+            left1=m-numZero;
+            left2=n-numOne;
+            if (left1<0||left2<0){
+                maxnum=max(maxnum,temp);
+            }
+            else
+                temp++;
+            for (int j = 0; j < strs.size(); ++j) {
+                if(i==j)
+                    continue;
+                numZero=count(strs[i].begin(),strs[i].end(),'0');
+                numOne=count(strs[i].begin(),strs[i].end(),'1');
+                left1=m-numZero;
+                left2=n-numOne;
+                if (left1<0||left2<0){
+                    maxnum=max(maxnum,temp);
+                }
+                else
+                    temp++;
+            }
         }
+        return maxnum;
     }
 };
