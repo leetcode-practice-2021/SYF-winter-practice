@@ -9,6 +9,7 @@
 
 //Definition for a binary tree node.
 #include "vector"
+#include "stack"
 
 using namespace std;
 
@@ -21,31 +22,23 @@ struct TreeNode {
 
 class Solution {
 public:
-    vector<vector<int>> zigzagLevelOrder(TreeNode* root) {
-        vector<vector<int>>result;
-        vector<int>temp;
-        bool direct= false;
-        temp.push_back(root->val);
-        result.push_back(temp);
+    vector<int> zigzag(stack<TreeNode*> &stk,TreeNode *p,int direct){
+        if (!stk)
+        vector<int> temp;
 
-        TreeNode *p=root;
-        while (true){
-            if (p->left==NULL&&p->right== NULL)
-                break;
-
-        }
     }
-    void findnext(TreeNode* node,bool direct){
-        if (node==NULL)
-            return;
-        if (direct){
-            direct=false;
-            node=node->left;
-            findnext(node,direct);
-        } else{
-            direct=true;
-            node=node->right;
-            findnext(node,direct);
+    vector<vector<int>> zigzagLevelOrder(TreeNode* root) {
+        //先push入栈，pop的后加入临时的vector ；当栈为空时，将vector中的元素按方向获取子树并压栈
+        vector<vector<int>> res;
+        stack<TreeNode*> stk;
+        stk.push(root);
+        int direct=0;
+        while (root != NULL || !stk.empty()) {
+            vector<int> temp;
+            while (root != NULL) {
+                stk.push(root);
+                root = root->left;
+            }
 
         }
     }
