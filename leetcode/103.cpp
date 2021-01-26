@@ -23,7 +23,6 @@ struct TreeNode {
 class Solution {
 public:
     vector<int> zigzag(stack<TreeNode*> &stk,TreeNode *p,int direct){
-        if (!stk)
         vector<int> temp;
 
     }
@@ -35,6 +34,14 @@ public:
         int direct=0;
         while (root != NULL || !stk.empty()) {
             vector<int> temp;
+            while (!stk.empty()){
+                root = stk.top();
+                stk.pop();
+                temp.push_back(root->val);
+            }
+            if (direct==0){
+
+            }
             while (root != NULL) {
                 stk.push(root);
                 root = root->left;
