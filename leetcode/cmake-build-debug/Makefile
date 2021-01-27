@@ -170,6 +170,33 @@ leetcode/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/10.cpp.s
 .PHONY : 10.cpp.s
 
+102.o: 102.cpp.o
+
+.PHONY : 102.o
+
+# target to build an object file
+102.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/102.cpp.o
+.PHONY : 102.cpp.o
+
+102.i: 102.cpp.i
+
+.PHONY : 102.i
+
+# target to preprocess a source file
+102.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/102.cpp.i
+.PHONY : 102.cpp.i
+
+102.s: 102.cpp.s
+
+.PHONY : 102.s
+
+# target to generate assembly for a file
+102.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/102.cpp.s
+.PHONY : 102.cpp.s
+
 103.o: 103.cpp.o
 
 .PHONY : 103.o
@@ -277,6 +304,33 @@ leetcode/fast:
 15.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/15.cpp.s
 .PHONY : 15.cpp.s
+
+19.o: 19.cpp.o
+
+.PHONY : 19.o
+
+# target to build an object file
+19.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/19.cpp.o
+.PHONY : 19.cpp.o
+
+19.i: 19.cpp.i
+
+.PHONY : 19.i
+
+# target to preprocess a source file
+19.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/19.cpp.i
+.PHONY : 19.cpp.i
+
+19.s: 19.cpp.s
+
+.PHONY : 19.s
+
+# target to generate assembly for a file
+19.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/19.cpp.s
+.PHONY : 19.cpp.s
 
 215.o: 215.cpp.o
 
@@ -614,6 +668,9 @@ help:
 	@echo "... 10.o"
 	@echo "... 10.i"
 	@echo "... 10.s"
+	@echo "... 102.o"
+	@echo "... 102.i"
+	@echo "... 102.s"
 	@echo "... 103.o"
 	@echo "... 103.i"
 	@echo "... 103.s"
@@ -626,6 +683,9 @@ help:
 	@echo "... 15.o"
 	@echo "... 15.i"
 	@echo "... 15.s"
+	@echo "... 19.o"
+	@echo "... 19.i"
+	@echo "... 19.s"
 	@echo "... 215.o"
 	@echo "... 215.i"
 	@echo "... 215.s"

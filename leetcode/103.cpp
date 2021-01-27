@@ -39,8 +39,9 @@ public:
                 stk.pop();
                 temp.push_back(root->val);
             }
+            res.push_back(temp);
             if (direct==0){
-
+                for(auto )
             }
             while (root != NULL) {
                 stk.push(root);
