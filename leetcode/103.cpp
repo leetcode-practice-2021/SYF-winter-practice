@@ -41,7 +41,7 @@ public:
             }
             res.push_back(temp);
             if (direct==0){
-                for(auto )
+                //for(auto )
             }
             while (root != NULL) {
                 stk.push(root);

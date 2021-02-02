@@ -89,6 +89,9 @@
 		<Unit filename="/Users/shiyufei/mianshi/leetcode/103.cpp">
 			<Option target="leetcode"/>
 		</Unit>
+		<Unit filename="/Users/shiyufei/mianshi/leetcode/104.cpp">
+			<Option target="leetcode"/>
+		</Unit>
 		<Unit filename="/Users/shiyufei/mianshi/leetcode/121.cpp">
 			<Option target="leetcode"/>
 		</Unit>
@@ -99,6 +102,9 @@
 			<Option target="leetcode"/>
 		</Unit>
 		<Unit filename="/Users/shiyufei/mianshi/leetcode/19.cpp">
+			<Option target="leetcode"/>
+		</Unit>
+		<Unit filename="/Users/shiyufei/mianshi/leetcode/2.cpp">
 			<Option target="leetcode"/>
 		</Unit>
 		<Unit filename="/Users/shiyufei/mianshi/leetcode/215.cpp">
@@ -117,6 +123,12 @@
 			<Option target="leetcode"/>
 		</Unit>
 		<Unit filename="/Users/shiyufei/mianshi/leetcode/62.cpp">
+			<Option target="leetcode"/>
+		</Unit>
+		<Unit filename="/Users/shiyufei/mianshi/leetcode/714.cpp">
+			<Option target="leetcode"/>
+		</Unit>
+		<Unit filename="/Users/shiyufei/mianshi/leetcode/724.cpp">
 			<Option target="leetcode"/>
 		</Unit>
 		<Unit filename="/Users/shiyufei/mianshi/leetcode/730.cpp">
