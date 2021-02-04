@@ -5,32 +5,28 @@
 
 using namespace std;
 
-int pivotIndex(vector<int>& nums) {
-    int leftsum=nums[0],rightsum=nums[nums.size()-1];
-    int i=1,j=nums.size()-2;
-    if (nums.size()<2)
-        return -1;
-    while (true){
-        if (i==j)
-            return leftsum==rightsum?i:-1;
-        if (leftsum<rightsum) {
-            leftsum+=nums[i];
-            i++;
-        }
-        else if (leftsum>rightsum) {
-            rightsum+=nums[j];
-            j--;
-        }
-        else
-        if (i==j)
-            return i;
+int search(vector<int>& nums, int target) {
+    int index=-1;
+    for (int i = 0; i < nums.size(); ++i) {
+        cout<<nums[i];
+        if (nums[i]==target)
+            index==i;
     }
+    if (index==-1)
+        return index;
+    for (int i = 1; i < nums.size(); ++i) {
+        if (i<index&&nums[i]<nums[i-1])
+            return -1;
+        else if (i>index&&nums[i]<nums[i-1])
+            return -1;
+    }
+    return index;
 }
 
 int main() {
     std::cout << "Hello, World!" << std::endl;
-    int x[6] = {1,7,3,6,5,6};
-    vector<int> n(x, x + 6);
-    cout << pivotIndex(n);
+    int x[7] = {4,5,6,7,0,1,2};
+    vector<int> n(x, x + 7);
+    cout << search(n,0);
     return 0;
 }
